@@ -18,4 +18,11 @@ public class Song {
     public double getDuration() {
         return duration;
     }
+
+    public String toString() {
+        return "Song{" +
+                "songTitle='" + songTitle + '\'' +
+                ", duration=" + duration +
+                '}';
+    }
 }

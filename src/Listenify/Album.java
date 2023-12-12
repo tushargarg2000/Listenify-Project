@@ -28,7 +28,6 @@ public class Album {
 
         //Find if the song with entered title is present in the songList
         //of this album or not
-
         //return T/F
         for(Song song : songList){
             if(song.getSongTitle().equals(title)){
@@ -42,6 +41,9 @@ public class Album {
 
         if(findSong(title)==false) {
             Song newSong = new Song(title,duration);
+
+
+
             songList.add(newSong);
             return "New Song has been added to the Song List";
         }else{
